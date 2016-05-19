@@ -15,55 +15,46 @@ position:relative;
 z-index: 3;
 clear:both;
 }
+/*my new changes */
 
-/* Testing */
 
+#navigation {
+max-width: 980px; 
+margin: 0 auto;
+padding: 10px 0; 
+color: 	#000000; 
+}
 
-            #navigation {
-            max-width: 980px; /* change to a max-width */
-            margin: 0 auto;
-            padding: 10px 0; /* lets change this to 10px top/bottom and 0px left/right */
-            /*border: 1px solid black;*/
-            color: 	#000000; /* give all text elements a color of white */
-            }
+#navigation ul {
+overflow: hidden; 
+padding: 10px 0;
+margin: 0; 
+}
 
-            #navigation ul {
-                overflow: hidden; /* prevents the great collapse */
-                /*border: 1px solid grey;*/
-                padding: 10px 0;
-                margin: 0; /* overwrites existing margins */
-            }
+#navigation ul li {
+list-style: none;
+float: left;
+margin: 0; 
+margin-right: 20px; 
+}
 
-            #navigation ul li {
-                list-style: none;
-                float: left;
-                margin: 0; /* overwrites existing margins */
-                margin-right: 20px; /* gives the items space between */
-            }
+#navigation ul li a {
+color: 	#000000; 
+text-decoration: none; 
+}
 
-                #navigation ul li a {
-                    color: 	#000000; /* let's use white for the default link state */
-                    text-decoration: none; /* this disables the default underline */
+#navigation ul li a:hover {
+color: #EBB700; 
                 }
 
-                #navigation ul li a:hover {
-                    color: #EBB700; /* and use bright gold */
-                }
+#navigation ul li.current-menu-item a, #navigation ul li.current-menu-parent a {
+color: #EBB700; 
+}
 
-                #navigation ul li.current-menu-item a, #navigation ul li.current-menu-parent a {
-                    color: #EBB700; /* and use bright gold */
-                }
-
-                #navigation ul li ul.sub-menu {
-                    display: none;
-                }
+#navigation ul li ul.sub-menu {
+display: none;
+}
         
-
-
-
-
-
-
 img{
     max-width:100%;
     height: auto;
