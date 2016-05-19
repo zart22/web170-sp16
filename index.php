@@ -8,7 +8,7 @@
     
 </div>
     
-<!--test-->
+<!--test why not make changes -->
  
 <!-- Start FlexSlider Code, place just before closing body tag --> 
 <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
