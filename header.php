@@ -5,10 +5,26 @@
     <meta charset="utf-8"/>
     <meta name="robots" content="noindex,nofolow"/>
     <meta name="viewort" content="width=device-width"/> 
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/flexslider.css" type="text/css">
-    <script src="<?php bloginfo('template_directory'); ?>/scripts/jquery.flexslider.js"></script>   
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    
+    
+  
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/flexslider.css" type="text/css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/scripts/jquery.flexslider.js"></script>
+
+ <!--"flexslider" --> 
+<script type="text/javascript">
+// Can also be used with $(document).ready()
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide",
+    });
+});
+</script>    
+    
     
 <!-- Start WP Head -->
 <?php wp_head(); ?>
