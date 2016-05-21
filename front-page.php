@@ -1,18 +1,50 @@
 <?php get_header(); ?>
 
-    <!-- Begin Content -->
-    <div id="content">
-    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); // start the loop ?>
-    <article id="post-<?php the_ID(); ?>" class="post">
-    <h2><?php the_title(); // the posting title ?></h2>
-    <small>Posted on <?php the_time('F j, Y'); // the time ?> by <?php the_author(); // the author name ?> in <?php the_category(', '); // the category ?></small>
-    <?php the_post_thumbnail( 'large' ); // the featured image ?>
-    <?php the_content(''); // posting written content ?>
-    </article>
-    <?php endwhile; endif; // end the loop ?>
-    <small>single.php</small>
-    </div>
-    <!-- End Content -->
+    <!-- Begin Flex Slider -->
+    <article class="slider">
+    	<div class="flexslider">
+	  <ul class="slides">
+          
+          
+        <li data-thumb="<?php bloginfo('template_directory'); ?>/images/kid2.png">
+			<img src="<?php bloginfo('template_directory'); ?>/images/kid2.png" />
+			</li>
+          
+          
+        <li data-thumb="<?php bloginfo('template_directory'); ?>/images/kid1.png">
+			<img src="<?php bloginfo('template_directory'); ?>/images/kid1.png" />
+			</li>
+          
+        <li data-thumb="<?php bloginfo('template_directory'); ?>/images/kid3.png">
+			<img src="<?php bloginfo('template_directory'); ?>/images/kid3.png" /> 
+			</li>
+	  </ul>
+	</div>
+   <!-- <a href=""><button class="home">Register</button></a>-->
+       </article>
+     
+    <!-- End Flex Slider -->
     
-<?php get_sidebar(); ?>
+    <!-- Begin Widgets -->
+    <div id="widgets">
+        <section class="widget-item">
+        <h2>About Company</h2>
+        <?php if ( have_posts() ) : while( have_posts() ) : the_post(); // start loop one ?>
+        <?php the_content(''); // get the home page's content ?>
+        <?php endwhile; endif; // end loop one ?>
+        </section>
+        <section class="widget-item">
+        <h2>Latest Postings:</h2>
+        <ul>
+		<?php rewind_posts(); // stop loop one ?>
+        <?php query_posts('showposts=4'); // give directions to loop two ?>
+        <?php while (have_posts()) : the_post(); // start loop two ?>
+        <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+        <?php endwhile; // end loop two ?>
+        </ul>
+        </section>
+        
+    </div>
+    <!-- End Widgets -->
+
 <?php get_footer(); ?>

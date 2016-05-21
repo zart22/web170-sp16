@@ -80,25 +80,3 @@ $(window).load(function() {
     
 <!-- Slider Starts Here -->
     
-<article class="slider">
-    	<div class="flexslider">
-	  <ul class="slides">
-          
-          
-        <li data-thumb="<?php bloginfo('template_directory'); ?>/images/kid2.png">
-			<img src="<?php bloginfo('template_directory'); ?>/images/kid2.png" />
-			</li>
-          
-          
-        <li data-thumb="<?php bloginfo('template_directory'); ?>/images/kid1.png">
-			<img src="<?php bloginfo('template_directory'); ?>/images/kid1.png" />
-			</li>
-          
-        <li data-thumb="<?php bloginfo('template_directory'); ?>/images/kid3.png">
-			<img src="<?php bloginfo('template_directory'); ?>/images/kid3.png" /> 
-			</li>
-	  </ul>
-	</div>
-   <!-- <a href=""><button class="home">Register</button></a>-->
-       </article>
-     
