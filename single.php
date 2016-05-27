@@ -6,6 +6,7 @@
     <article id="post-<?php the_ID(); ?>" class="post">
     <h2><?php the_title(); // the posting title ?></h2>
     <small>Posted on <?php the_time('F j, Y'); // the time ?> by <?php the_author(); // the author name ?> in <?php the_category(', '); // the category ?></small>
+        
     <?php the_post_thumbnail( 'large' ); // the featured image ?>
     <?php the_content(''); // posting written content ?>
     </article>

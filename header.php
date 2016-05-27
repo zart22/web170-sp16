@@ -78,5 +78,4 @@ $(window).load(function() {
 
 
     
-<!-- Slider Starts Here -->
     
