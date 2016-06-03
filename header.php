@@ -17,7 +17,6 @@
 
  <!--"flexslider" --> 
 <script type="text/javascript">
-// Can also be used with $(document).ready()
 $(window).load(function() {
   $('.flexslider').flexslider({
     animation: "slide",
@@ -39,7 +38,7 @@ $(window).load(function() {
 
 <div id="header"></div>
      <div id="logo">
-    <a href="index.php"><img class="header-img" width="200" height="50" src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="logo"></a>
+    <a href="<?php echo esc_url( home_url('/')); ?>"><img class="header-img" width="200" height="50" src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="logo"></a>
         </div> 
     
         
