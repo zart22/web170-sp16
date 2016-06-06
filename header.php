@@ -1,11 +1,12 @@
 <!Doctype html>
 <html>
 <head>
-    <title><?php bloginfo('description'); ?> <?php bloginfo('name'); ?> </title>
-    <meta charset="utf-8"/>
-    <meta name="robots" content="noindex,nofolow"/>
-    <meta name="viewort" content="width=device-width"/> 
+    <title><?php get_my_title_tag(); ?> </title>
     
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="description" content="<?php echo strip_tags(get_the_excerpt()); ?>" />
+    <meta charset="utf-8"/>
+   
     
   
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
