@@ -54,6 +54,8 @@ color: #EBB700;
 #navigation ul li ul.sub-menu {
 display: none;
 }
+
+
         
 img{
     max-width:100%;
@@ -220,7 +222,10 @@ ol, ul{
     position:relative;
 } 
 
-
+#sidebar blockqoute {
+    border-top: 1px solid #FFFF00;
+    font-style: italic;
+}
 
  
 /* Desktop Below 1024*/

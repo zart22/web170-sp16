@@ -22,8 +22,8 @@ wp_list_pages(array('child_of' => $post->post_parent, 'title_li' => __('')));
     
     
 <!-- quote -->
-<?php if (get_post_meta($post->ID, 'Quote', true)) :  ?>
-    <blockquote><?php echo get_post_meta($post->ID, 'Quote', true); ?></blockquote> 
+<?php if (get_post_meta($post->ID, 'quote', true)) :  ?>
+    <blockquote><?php echo get_post_meta($post->ID, 'quote', true); ?></blockquote> 
     
 <?php endif; ?>
 <!-- end quote -->
